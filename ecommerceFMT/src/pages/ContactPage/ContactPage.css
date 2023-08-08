@@ -1,0 +1,17 @@
+input-div{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.input-div input{
+    width: 90%;
+    margin-right: 2%;
+}
+.input-div label{
+    margin-right: 5px;
+}
+#email, #txt, #btn{
+    margin-left: 10px;
+    width: 91%;
+}
