@@ -2,21 +2,21 @@
   {
     "id": 1,
     "nome": "PlayStation 5",
-    "preco": 499.99,
+    "preco": 4499.99,
     "descricao": "Console de próxima geração da Sony com incrível poder de processamento.",
     "imagem": "https://placehold.co/600x400"
   },
   {
     "id": 2,
     "nome": "Xbox Series X",
-    "preco": 499.99,
+    "preco": 2499.99,
     "descricao": "Console de última geração da Microsoft com desempenho superior.",
     "imagem": "https://placehold.co/600x400"
   },
   {
     "id": 3,
     "nome": "Nintendo Switch",
-    "preco": 299.99,
+    "preco": 2299.99,
     "descricao": "Console híbrido da Nintendo que pode ser jogado em casa ou em trânsito.",
     "imagem": "https://placehold.co/600x400"
   },
@@ -51,7 +51,7 @@
   {
     "id": 8,
     "nome": "Call of Duty: Warzone",
-    "preco": 0.00,
+    "preco": 80.00,
     "descricao": "Jogo de battle royale da popular série Call of Duty.",
     "imagem": "https://placehold.co/600x400"
   },
