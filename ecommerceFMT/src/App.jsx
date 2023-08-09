@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ContactPage from '../src/pages/ContactPage/ContactPage';
-import NotFoundPage from '../src/pages/NotFoundPage/NotFoundPage';
+import ContactPage from './pages/ContactPage/ContactPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
+import CartPage from "./pages/CartPage/CartPage";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<HomePage />} /> */}
           {/* <Route path="/produtos" element={<ProductsPage />} /> */}
-          {/* <Route path="/carrinho" element={<ShoppingCartPage />} /> */}
+          <Route path="/carrinho" element={<CartPage />} />
           <Route path="/contato" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
