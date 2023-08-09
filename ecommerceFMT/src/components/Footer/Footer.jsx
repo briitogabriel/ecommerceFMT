@@ -1,12 +1,7 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
-
-import "../Footer/Footer.css";
-
-import {
-  FaFacebookSquare,
-  FaInstagram, 
-} from "react-icons/fa";
+import '../Footer/Footer.css';
+import { FaFacebookSquare, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -18,7 +13,11 @@ function Footer() {
             <li className="contato-li"> FAQ</li>
             <li className="contato-li">Trocas e Privacidade</li>
             <li className="contato-li">Termos e Condições</li>
-            <li className="contato-li"><Link className="list-group-item" to={"/contato"}>Entre em Contato</Link> </li>
+            <li className="contato-li">
+              <Link className="list-group-item" to={'/contato'}>
+                Entre em Contato
+              </Link>{' '}
+            </li>
           </ul>
         </div>
 
@@ -42,7 +41,6 @@ function Footer() {
           </ul>
         </div>
       </div>
-   
     </>
   );
 }

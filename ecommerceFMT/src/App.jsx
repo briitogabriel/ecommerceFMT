@@ -4,6 +4,7 @@ import NotFoundPage from '../src/pages/NotFoundPage/NotFoundPage';
 import { Header } from './components/Header';
 import { Homepage } from './pages/Homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contato" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
