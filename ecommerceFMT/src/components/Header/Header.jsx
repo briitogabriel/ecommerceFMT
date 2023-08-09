@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { BadgeCart } from './../BadgeCart';
 
 export const Header = () => {
   return (
@@ -14,7 +15,12 @@ export const Header = () => {
             </LinkContainer>
 
             <LinkContainer to="/cart">
-              <Nav.Link>Cart</Nav.Link>
+              <Nav.Link>
+                Cart{' '}
+                <sup>
+                  <BadgeCart />
+                </sup>
+              </Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
