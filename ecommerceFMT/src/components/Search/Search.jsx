@@ -13,25 +13,26 @@ function Search() {
 
   return (
     <>
-      <input
-        className="form-control"
-        list="datalistOptions"
-        id="exampleDataList"
-        onChange={handleSearch}
-        value={searchInput}
-        placeholder="Digite para procurar..."
-      />
-      <datalist id="datalistOptions">
-        {products.map((value, id) => (
-          <option key={id} value={value.nome} />
-        ))}
-      </datalist>
-{/*       <button >
+      <div className=" w-100 ">
+        <input
+          className="form-control w-75"
+          style={{margin: "0 auto"}}
+          list="datalistOptions"
+          onChange={handleSearch}
+          value={searchInput}
+          placeholder="Digite para procurar..."
+        />
+        <datalist id="datalistOptions">
+          {products.map((value, id) => (
+            <option key={id} value={value.nome} />
+          ))}
+        </datalist>
+        {/*       <button >
         <SlMagnifier />
       </button> */}
+      </div>{" "}
     </>
   );
 }
 
 export default Search;
-
