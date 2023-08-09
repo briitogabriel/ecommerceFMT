@@ -1,5 +1,7 @@
 import Badge from 'react-bootstrap/Badge';
+import { useAppContext } from '../../context/Context'
 
 export const BadgeCart = () => {
-  return <Badge bg="secondary">0</Badge>;
+  const { cart } = useAppContext();
+  return <Badge bg="secondary">{cart.length}</Badge>;
 };
