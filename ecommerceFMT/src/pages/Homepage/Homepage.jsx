@@ -9,7 +9,7 @@ export const Homepage = () => {
     <Container>
       <h2 className="my-5 text-center">Lista de Produtos</h2>
       <div className="d-flex flex-wrap justify-content-evenly gap-3">
-        {products.map(product => <ProductCardComponent key={product.id} {...product} />)}
+        {products.map(product => <ProductCardComponent key={product.id} product={product} />)}
       </div>
     </Container>
   );
