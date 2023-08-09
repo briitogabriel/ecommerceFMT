@@ -1,12 +1,17 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { BadgeCart } from './../BadgeCart';
+import { MdGames } from 'react-icons/md';
 
 export const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Games</Navbar.Brand>
+        <LinkContainer to="/">
+          <Navbar.Brand>
+            <MdGames /> Games Shop
+          </Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -14,13 +19,17 @@ export const Header = () => {
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>
 
-            <LinkContainer to="/cart">
+            <LinkContainer to="/carrinho">
               <Nav.Link>
-                Cart{' '}
+                Carrinho{' '}
                 <sup>
                   <BadgeCart />
                 </sup>
               </Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to="/contato">
+              <Nav.Link>Contato</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

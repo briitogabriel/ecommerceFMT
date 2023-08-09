@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import ContactPage from '../src/pages/ContactPage/ContactPage';
-import NotFoundPage from '../src/pages/NotFoundPage/NotFoundPage';
+import { ContactPage } from '../src/pages/ContactPage';
+import { NotFoundPage } from '../src/pages/NotFoundPage';
 import { Header } from './components/Header';
 import { Homepage } from './pages/Homepage';
+import { Footer } from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer/Footer';
 
 function App() {
   return (
