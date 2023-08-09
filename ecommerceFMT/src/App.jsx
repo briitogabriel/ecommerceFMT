@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactPage from '../src/pages/ContactPage/ContactPage';
 import NotFoundPage from '../src/pages/NotFoundPage/NotFoundPage';
-
+import Search from "./components/Search/Search";
+import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
     <>
@@ -14,6 +15,8 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
+ <Search/>
+
     </>
   );
 }
