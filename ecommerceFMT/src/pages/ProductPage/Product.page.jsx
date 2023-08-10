@@ -1,7 +1,6 @@
 import {useParams} from 'react-router-dom';
 import { useAppContext } from '../../context/Context';
 import {Button, Card} from 'react-bootstrap';
-import './ProductPage.style.css';
 
 export const ProductPage = () => {
     const {id} = useParams();
@@ -10,7 +9,7 @@ export const ProductPage = () => {
     const productId = Number(id);
 
     const product = products.filter(product => product.id === productId)
-    console.log(product)
+    
     return (
         <div className="product p-4">
             <Card className="m-auto" style={{width: "80%"}}>
