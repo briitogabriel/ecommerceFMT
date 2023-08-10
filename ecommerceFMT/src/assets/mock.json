@@ -4,7 +4,7 @@
     "nome": "PlayStation 5",
     "preco": 4499.99,
     "descricao": "Console de próxima geração da Sony com incrível poder de processamento.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/playstation5.jpg",
     "quantidade": 0
   },
   {
@@ -12,7 +12,7 @@
     "nome": "Xbox Series X",
     "preco": 2499.99,
     "descricao": "Console de última geração da Microsoft com desempenho superior.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/xbox_seriesx.jpg",
     "quantidade": 0
   },
   {
@@ -20,7 +20,7 @@
     "nome": "Nintendo Switch",
     "preco": 2299.99,
     "descricao": "Console híbrido da Nintendo que pode ser jogado em casa ou em trânsito.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/nintendo_switch.jpg",
     "quantidade": 0
   },
   {
@@ -28,7 +28,7 @@
     "nome": "DualShock 4 Wireless Controller",
     "preco": 49.99,
     "descricao": "Controle sem fio oficial da Sony para o PlayStation 4.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/dualShock4_wireless_controller.jpg",
     "quantidade": 0
   },
   {
@@ -36,7 +36,7 @@
     "nome": "Xbox Wireless Controller",
     "preco": 59.99,
     "descricao": "Controle sem fio oficial da Microsoft para o Xbox.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/controle_xbox_seriesx_sem_fio.jpg",
     "quantidade": 0
   },
   {
@@ -44,7 +44,7 @@
     "nome": "The Legend of Zelda: Breath of the Wild",
     "preco": 59.99,
     "descricao": "Jogo de ação e aventura da série The Legend of Zelda.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/the_legend_of_zelda_breath_of_the_wild.jpg",
     "quantidade": 0
   },
   {
@@ -52,15 +52,15 @@
     "nome": "FIFA 21",
     "preco": 49.99,
     "descricao": "Jogo de simulação de futebol da série FIFA.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/fifa21.jpg",
     "quantidade": 0
   },
   {
     "id": 8,
     "nome": "Call of Duty: Warzone",
-    "preco": 80.00,
+    "preco": 80.0,
     "descricao": "Jogo de battle royale da popular série Call of Duty.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/call_of_duty_warzone.jpg",
     "quantidade": 0
   },
   {
@@ -68,7 +68,7 @@
     "nome": "PlayStation Plus 12-Month Membership",
     "preco": 59.99,
     "descricao": "Assinatura que oferece jogos gratuitos e recursos online no PS4 e PS5.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/playStation_plus_membership.jpg",
     "quantidade": 0
   },
   {
@@ -76,7 +76,7 @@
     "nome": "Xbox Game Pass Ultimate",
     "preco": 14.99,
     "descricao": "Assinatura que oferece acesso a uma vasta biblioteca de jogos.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/xbox_game_pass_ultimate.jpg",
     "quantidade": 0
   },
   {
@@ -84,7 +84,7 @@
     "nome": "Cyberpunk 2077",
     "preco": 49.99,
     "descricao": "Jogo de RPG de mundo aberto ambientado em um futuro distópico.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/cyberpunk.jpg",
     "quantidade": 0
   },
   {
@@ -92,7 +92,7 @@
     "nome": "Assassin's Creed Valhalla",
     "preco": 59.99,
     "descricao": "Jogo de ação e aventura ambientado na era dos vikings.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/assassins_creed_valhalla.jpg",
     "quantidade": 0
   },
   {
@@ -100,7 +100,7 @@
     "nome": "Razer DeathAdder Elite Gaming Mouse",
     "preco": 69.99,
     "descricao": "Mouse gamer com sensor óptico avançado e design ergonômico.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/razer_deathAdder_elite_gaming_mouse.jpg",
     "quantidade": 0
   },
   {
@@ -108,7 +108,7 @@
     "nome": "Nintendo Switch Pro Controller",
     "preco": 69.99,
     "descricao": "Controle pro da Nintendo para o Nintendo Switch.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/nintendo_switch_pro_controller.jpg",
     "quantidade": 0
   },
   {
@@ -116,7 +116,7 @@
     "nome": "Red Dead Redemption 2",
     "preco": 49.99,
     "descricao": "Jogo de ação e aventura em um mundo aberto do Velho Oeste.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/red_dead_redemption2.jpg",
     "quantidade": 0
   },
   {
@@ -124,7 +124,7 @@
     "nome": "Spider-Man: Miles Morales",
     "preco": 39.99,
     "descricao": "Jogo de ação do Homem-Aranha com foco em Miles Morales.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/spider_man_miles_morales.jpg",
     "quantidade": 0
   },
   {
@@ -132,7 +132,7 @@
     "nome": "Xbox Live Gold 12-Month Membership",
     "preco": 59.99,
     "descricao": "Assinatura que oferece jogos gratuitos e recursos online no Xbox.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/xbox_live_gold_membership.jpg",
     "quantidade": 0
   },
   {
@@ -140,7 +140,7 @@
     "nome": "Pokémon Sword",
     "preco": 49.99,
     "descricao": "Jogo de RPG da série Pokémon ambientado na região de Galar.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/pokemon_sword.jpg",
     "quantidade": 0
   },
   {
@@ -148,7 +148,7 @@
     "nome": "Mortal Kombat 11",
     "preco": 39.99,
     "descricao": "Jogo de luta com uma lista diversificada de personagens.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/mortal_kombat_11.jpg",
     "quantidade": 0
   },
   {
@@ -156,7 +156,7 @@
     "nome": "Nintendo Switch Lite",
     "preco": 199.99,
     "descricao": "Versão portátil do Nintendo Switch para jogar em movimento.",
-    "imagem": "https://placehold.co/600x400",
+    "imagem": "images/nintendo_switch_lite.jpg",
     "quantidade": 0
   }
 ]
