@@ -1,0 +1,1 @@
+export { BadgeCart } from './BadgeCart';

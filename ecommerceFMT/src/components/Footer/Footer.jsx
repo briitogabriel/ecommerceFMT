@@ -1,50 +1,87 @@
-import React from "react";
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
-import "../Footer/Footer.css";
-
 import {
-  FaFacebookSquare,
-  FaInstagram, 
-} from "react-icons/fa";
+  BsFacebook,
+  BsTwitter,
+  BsGoogle,
+  BsInstagram,
+  BsLinkedin,
+} from 'react-icons/bs';
 
-function Footer() {
-  return (
-    <>
-      <div className="d-flex flex-row justify-content-evenly bg-info pb-3 footer mt-5">
-        <div className="d-flex flex-column mt-5">
-          <h2>Contato</h2>
-          <ul className="contato">
-            <li className="contato-li"> FAQ</li>
-            <li className="contato-li">Trocas e Privacidade</li>
-            <li className="contato-li">Termos e Condições</li>
-            <li className="contato-li"><Link className="list-group-item" to={"/contato"}>Entre em Contato</Link> </li>
-          </ul>
-        </div>
+export const Footer = () => (
+  <footer className="text-center text-white bg-dark">
+    <Container>
+      <section className="mt-5">
+        <div className="row text-center d-flex justify-content-center pt-5">
+          <div className="col-md-2">
+            <h6 className="text-uppercase font-weight-bold">
+              <Link to="/" className="text-white text-decoration-none">
+                Home
+              </Link>
+            </h6>
+          </div>
 
-        <div className="d-flex flex-column mt-5">
-          <h2>Institucional</h2>
-          <ul className="contato">
-            <li className="contato-li">Quem Somos</li>
-            <li className="contato-li">Nossas Lojas</li>
-            <li className="contato-li">Trabalhe Conosco</li>
-            <li className="contato-li">Seja um parceiro</li>
-          </ul>
-        </div>
-        <div>
-          <ul className="contato d-flex flex-column gap-4 m-5">
-            <li className="icons">
-              <FaInstagram className="icon-li"></FaInstagram>
-            </li>
-            <li className="icons">
-              <FaFacebookSquare className="icon-li"></FaFacebookSquare>
-            </li>
-          </ul>
-        </div>
-      </div>
-   
-    </>
-  );
-}
+          <div className="col-md-2">
+            <h6 className="text-uppercase font-weight-bold">
+              <Link to="/carrinho" className="text-white text-decoration-none">
+                Carrinho
+              </Link>
+            </h6>
+          </div>
 
-export default Footer;
+          <div className="col-md-2">
+            <h6 className="text-uppercase font-weight-bold">
+              <Link to="/contato" className="text-white text-decoration-none">
+                Contato
+              </Link>
+            </h6>
+          </div>
+        </div>
+      </section>
+
+      <hr className="my-5" />
+
+      <section>
+        <div className="row d-flex justify-content-center">
+          <div className="col-lg-8">
+            <p>
+              Bem-vindo à nossa loja online Game Shop! Explore uma variedade
+              incrível de jogos e consoles de última geração. Encontre títulos
+              populares, exclusivos e uma coleção de consoles para todas as
+              preferências. Compras fáceis, entrega segura e diversão garantida.
+              Sua jornada no mundo dos jogos começa aqui!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="text-center mb-5">
+        <a target="_blank" href="#" className="text-white me-4">
+          <BsFacebook />
+        </a>
+        <a target="_blank" href="#" className="text-white me-4">
+          <BsTwitter />
+        </a>
+        <a target="_blank" href="#" className="text-white me-4">
+          <BsGoogle />
+        </a>
+        <a target="_blank" href="#" className="text-white me-4">
+          <BsInstagram />
+        </a>
+        <a target="_blank" href="#" className="text-white me-4">
+          <BsLinkedin />
+        </a>
+      </section>
+    </Container>
+
+    <div
+      className="text-center p-3"
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
+    >
+      <Link className="text-white text-decoration-none" to="/">
+        Games Shop
+      </Link>{' '}
+      © 2023
+    </div>
+  </footer>
+);
