@@ -1,18 +1,18 @@
-import productsMockup from '../../assets/mock.json'
+import { useAppContext } from '../../context/Context'
 import CartProduct from '../../components/CartProduct/CartProduct';
+import TotalCart from '../../components/TotalCart/TotalCart';
 
-const CartPage = () => {
+export const CartPage = () => {
+  const { cart, total } = useAppContext()
 
   return (
-    <div>
-      <div>NAVBAR COMPONENT</div>
-
-      {productsMockup.map((product, index) => (
-        <CartProduct product={product} key={index}/>
-      ))}
-      
+    <div className='d-flex'>
+      <div className='flex-column'>
+        {cart.map((product, index) => (
+          <CartProduct product={product} key={index}/>
+        ))}
+      </div>
+      <TotalCart total={total} />
     </div>
   )
 }
-
-export default CartPage;

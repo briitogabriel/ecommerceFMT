@@ -1,0 +1,7 @@
+.btn-qtd {
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  background-color: transparent;
+  min-width: 35px;
+  min-height: 35px;
+}
