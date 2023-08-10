@@ -10,12 +10,15 @@ export const ProductPage = () => {
 
     const product = products.filter(product => product.id === productId)
     
+    const path = `http://${window.location.host}`
+    console.log(path)
+
     return (
         <div className="product p-4">
             <Card className="m-auto" style={{width: "80%"}}>
                 <div className="row g-0">
                     <div className="col-md-4 m-auto d-flex justify-content-center">
-                    <img src={product[0].imagem} className="img-fluid rounded-start" alt={product.nome} />
+                    <img src={`${path}/${product[0].imagem}`} className="img-fluid rounded-start" alt={product.nome} />
                     </div>
                     <div className="col-md-8 d-flex flex-wrap justify-content-evenly">
                     <Card.Body className='m-auto'>
