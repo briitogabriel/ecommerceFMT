@@ -11,7 +11,6 @@ export const ProductPage = () => {
     const product = products.filter(product => product.id === productId)
     
     const path = `http://${window.location.host}`
-    console.log(path)
 
     return (
         <div className="product p-4">

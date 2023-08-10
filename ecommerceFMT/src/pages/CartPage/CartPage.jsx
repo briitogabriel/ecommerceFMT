@@ -6,13 +6,15 @@ export const CartPage = () => {
   const { cart, total } = useAppContext()
 
   return (
-    <div className='d-flex'>
-      <div className='flex-column'>
-        {cart.map((product, index) => (
-          <CartProduct product={product} key={index}/>
-        ))}
+    <div className='container'>
+      <div className='d-flex justify-content-end'>
+        <div className='flex-column'>
+          {cart.map((product, index) => (
+            <CartProduct product={product} key={index}/>
+          ))}
+        </div>
+        <TotalCart total={total} />
       </div>
-      <TotalCart total={total} />
     </div>
   )
 }
