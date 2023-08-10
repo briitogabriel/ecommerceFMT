@@ -7,6 +7,7 @@ import { Homepage } from './pages/Homepage';
 import { Footer } from './components/Footer';
 import Search from "./components/Search/Search";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ProductPage } from './pages/ProductPage/Product.page';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        {/* <Route path="/produtos" element={<ProductsPage />} /> */}
+        <Route path="/produto/:id" element={<ProductPage />} />
         <Route path="/carrinho" element={<CartPage />} />
         <Route path="/contato" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
