@@ -5,3 +5,11 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+a {
+    cursor: pointer;
+}
+
+.card-title:hover {
+    text-decoration: underline;
+}
