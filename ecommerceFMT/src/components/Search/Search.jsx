@@ -6,22 +6,16 @@ function Search() {
   const {products, setProducts} = useAppContext();
 
   const handleSearch = (e) => {
+    
     if (!e.target.value) {
       return setProducts(data)
     } 
 
-    
-
-    
-
     const result = products.filter((product) => {
-    const nome = product.nome.toLowerCase();
-     return nome.includes(e.target.value.toLowerCase())
+      const nome = product.nome.toLowerCase();
+      return nome.includes(e.target.value.toLowerCase())
     })
-
     setProducts(result)
-
-    console.log(products)
   };
 
   const handleSubmit = (e) => {
