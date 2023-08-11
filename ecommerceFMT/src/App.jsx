@@ -5,10 +5,9 @@ import { NotFoundPage } from '../src/pages/NotFoundPage';
 import { Header } from './components/Header';
 import { Homepage } from './pages/Homepage';
 import { Footer } from './components/Footer';
-import Search from "./components/Search/Search";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { ProductPage } from './pages/ProductPage/Product.page';
 import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
