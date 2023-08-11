@@ -1,6 +1,9 @@
 import {useParams} from 'react-router-dom';
 import { useAppContext } from '../../context/Context';
 import {Button, Card} from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+import './ProductPage.style.css';
+import {BiArrowBack} from 'react-icons/bi'
 
 export const ProductPage = () => {
     const {id} = useParams();
@@ -13,7 +16,7 @@ export const ProductPage = () => {
     const path = `http://${window.location.host}`
 
     return (
-        <div className="product p-4">
+        <div className="product p-4 text-center" style={{height: "45vh"}}>
             <Card className="m-auto" style={{width: "80%"}}>
                 <div className="row g-0">
                     <div className="col-md-4 m-auto d-flex justify-content-center">
@@ -29,6 +32,11 @@ export const ProductPage = () => {
                     </div>
                 </div>
                 </Card>
+                <LinkContainer to="/">
+                <div className='mt-1'>
+                    <a className='return-home'><BiArrowBack/> Voltar para página inicial</a>
+                </div>
+                </LinkContainer>
         </div>
 
         
