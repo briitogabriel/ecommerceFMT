@@ -10,8 +10,13 @@ function Search() {
       return setProducts(data)
     } 
 
+    
+
+    
+
     const result = products.filter((product) => {
-     return product.nome.includes(e.target.value)
+    const nome = product.nome.toLowerCase();
+     return nome.includes(e.target.value.toLowerCase())
     })
 
     setProducts(result)
