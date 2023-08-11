@@ -1,88 +1,101 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Form, Card, Button } from 'react-bootstrap';
-import './CheckoutPage.css';
+import { useState } from 'react';
+import { Container, Row, Col, Form, Card } from 'react-bootstrap';
+import { useAppContext } from './../../context/Context';
+import { useNavigate } from 'react-router-dom';
+import { formatCurrency } from './../../utils/formatCurrency';
+import { CgDollar } from 'react-icons/cg';
 
 export const CheckoutPage = () => {
-  const [itemsCount, setItemsCount] = useState(0);
-  const [totalAmount, setTotalAmount] = useState(0);
+  const { total, setTotal, setCart } = useAppContext();
   const [paymentMethod, setPaymentMethod] = useState('');
-
-  const handleItemCountChange = (event) => {
-    const count = parseInt(event.target.value);
-    setItemsCount(count);
-    calculateTotal(count);
-  };
-
-  const calculateTotal = (count) => {
-    const itemPrice = 10; // Preço unitário de cada item
-    const total = count * itemPrice;
-    setTotalAmount(total);
-  };
+  const navigate = useNavigate();
 
   const handlePaymentMethodChange = (event) => {
     setPaymentMethod(event.target.value);
   };
 
+  const handlePaymentClose = () => {
+    if (!paymentMethod) {
+      return alert('Selecione o meio de pagamento.');
+    }
+    setTotal(0);
+    setCart([]);
+    alert(
+      `Compra realizada com sucesso.\n\nPagamento via ${paymentMethod.toLowerCase()} no valor de ${formatCurrency(
+        total
+      )}.\n\nGames Shop agradece pela preferência.`
+    );
+    navigate('/');
+  };
+
   return (
-    <Container className="CheckoutPage">
+    <Container className="my-5">
       <Row>
         <Col xs={12} md={6}>
-          <h2>Como você prefere pagar?</h2>
+          <h2>Pagamento</h2>
+          <p>Escolha uma forma de pagamento</p>
           <Form>
             <Form.Group>
-              <Form.Label>Quantidade de itens:</Form.Label>
-              <Form.Control
-                type="number"
-                value={itemsCount}
-                onChange={handleItemCountChange}
-              />
-            </Form.Group>
-            <Form.Group>
-              <Form.Label>Método de pagamento:</Form.Label>
-              <div>
-                <Card>
-                  <Card.Body>
+              <Card className="mb-2">
+                <Card.Body>
+                  <Form.Label htmlFor="cartao">
                     <Form.Check
                       type="radio"
                       name="paymentMethod"
-                      value="cartao"
+                      value="cartão de crédito"
+                      id="cartao"
                       label="Pagar com Cartão"
                       onChange={handlePaymentMethodChange}
                     />
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Body>
+                  </Form.Label>
+                </Card.Body>
+              </Card>
+              <Card className="mb-2">
+                <Card.Body>
+                  <Form.Label htmlFor="boleto">
                     <Form.Check
                       type="radio"
                       name="paymentMethod"
                       value="boleto"
+                      id="boleto"
                       label="Pagar com Boleto"
                       onChange={handlePaymentMethodChange}
                     />
-                  </Card.Body>
-                </Card>
-                <Card>
-                  <Card.Body>
+                  </Form.Label>
+                </Card.Body>
+              </Card>
+              <Card className="mb-2">
+                <Card.Body>
+                  <Form.Label htmlFor="pix">
                     <Form.Check
                       type="radio"
                       name="paymentMethod"
                       value="pix"
+                      id="pix"
                       label="Pagar com PIX"
                       onChange={handlePaymentMethodChange}
                     />
-                  </Card.Body>
-                </Card>
-              </div>
+                  </Form.Label>
+                </Card.Body>
+              </Card>
             </Form.Group>
-            <Button variant="primary">Pagar</Button>
           </Form>
         </Col>
-        <Col xs={12} md={6}>
-          <div className="cart-summary">
-            <h3>Resumo do Carrinho</h3>
-            <p>Itens no carrinho: {itemsCount}</p>
-            <p>Total: R$ {totalAmount.toFixed(2)}</p>
+        <Col
+          xs={12}
+          md={6}
+          className="d-flex justify-content-center align-items-center"
+        >
+          <div>
+            <p className="text-center" style={{ fontSize: '4rem' }}>
+              {formatCurrency(total)}
+            </p>
+            <button
+              className="btn btn-primary btn-sm d-block m-auto"
+              onClick={handlePaymentClose}
+            >
+              Realizar o Pagamento
+            </button>
           </div>
         </Col>
       </Row>
