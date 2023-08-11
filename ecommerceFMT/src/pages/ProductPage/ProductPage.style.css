@@ -1,0 +1,14 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.return-home {
+    color: #000;
+    text-decoration: none;
+}
+
+.return-home:hover {
+    text-decoration: underline;
+}
