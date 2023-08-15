@@ -5,7 +5,7 @@
     "preco": 4499.99,
     "descricao": "Console de próxima geração da Sony com incrível poder de processamento.",
     "imagem": "images/playstation5.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "preco": 2499.99,
     "descricao": "Console de última geração da Microsoft com desempenho superior.",
     "imagem": "images/xbox_seriesx.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "preco": 2299.99,
     "descricao": "Console híbrido da Nintendo que pode ser jogado em casa ou em trânsito.",
     "imagem": "images/nintendo_switch.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "preco": 49.99,
     "descricao": "Controle sem fio oficial da Sony para o PlayStation 4.",
     "imagem": "images/dualShock4_wireless_controller.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "preco": 59.99,
     "descricao": "Controle sem fio oficial da Microsoft para o Xbox.",
     "imagem": "images/controle_xbox_seriesx_sem_fio.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "preco": 59.99,
     "descricao": "Jogo de ação e aventura da série The Legend of Zelda.",
     "imagem": "images/the_legend_of_zelda_breath_of_the_wild.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "preco": 49.99,
     "descricao": "Jogo de simulação de futebol da série FIFA.",
     "imagem": "images/fifa21.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "preco": 80.0,
     "descricao": "Jogo de battle royale da popular série Call of Duty.",
     "imagem": "images/call_of_duty_warzone.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "preco": 59.99,
     "descricao": "Assinatura que oferece jogos gratuitos e recursos online no PS4 e PS5.",
     "imagem": "images/playStation_plus_membership.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "preco": 14.99,
     "descricao": "Assinatura que oferece acesso a uma vasta biblioteca de jogos.",
     "imagem": "images/xbox_game_pass_ultimate.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "preco": 49.99,
     "descricao": "Jogo de RPG de mundo aberto ambientado em um futuro distópico.",
     "imagem": "images/cyberpunk.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "preco": 59.99,
     "descricao": "Jogo de ação e aventura ambientado na era dos vikings.",
     "imagem": "images/assassins_creed_valhalla.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "preco": 69.99,
     "descricao": "Mouse gamer com sensor óptico avançado e design ergonômico.",
     "imagem": "images/razer_deathAdder_elite_gaming_mouse.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "preco": 69.99,
     "descricao": "Controle pro da Nintendo para o Nintendo Switch.",
     "imagem": "images/nintendo_switch_pro_controller.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "preco": 49.99,
     "descricao": "Jogo de ação e aventura em um mundo aberto do Velho Oeste.",
     "imagem": "images/red_dead_redemption2.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "preco": 39.99,
     "descricao": "Jogo de ação do Homem-Aranha com foco em Miles Morales.",
     "imagem": "images/spider_man_miles_morales.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "preco": 59.99,
     "descricao": "Assinatura que oferece jogos gratuitos e recursos online no Xbox.",
     "imagem": "images/xbox_live_gold_membership.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "preco": 49.99,
     "descricao": "Jogo de RPG da série Pokémon ambientado na região de Galar.",
     "imagem": "images/pokemon_sword.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "preco": 39.99,
     "descricao": "Jogo de luta com uma lista diversificada de personagens.",
     "imagem": "images/mortal_kombat_11.jpg",
-    "quantidade": 0
+    "quantidade": 1
   },
   {
     "id": 20,
@@ -157,6 +157,6 @@
     "preco": 199.99,
     "descricao": "Versão portátil do Nintendo Switch para jogar em movimento.",
     "imagem": "images/nintendo_switch_lite.jpg",
-    "quantidade": 0
+    "quantidade": 1
   }
 ]
