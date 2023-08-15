@@ -10,7 +10,7 @@ export const ProductCardComponent = ({ product }) => {
   return (
     <Card style={{ width: '18rem' }}>
       <a onClick={() => navigate(`/produto/${product.id}`)}>
-        <Card.Img variant="top" src={product.imagem} />
+        <Card.Img variant="top" src={product.imagem} alt={product.descricao} />
       </a>
       <Card.Body>
         <a onClick={() => navigate(`/produto/${product.id}`)}>

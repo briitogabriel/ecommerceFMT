@@ -14,27 +14,27 @@ export const Footer = () => (
       <section className="mt-5">
         <div className="row text-center d-flex justify-content-center pt-5">
           <div className="col-md-2">
-            <h6 className="text-uppercase font-weight-bold">
+            <p className="text-uppercase font-weight-bold">
               <Link to="/" className="text-white text-decoration-none">
                 Home
               </Link>
-            </h6>
+            </p>
           </div>
 
           <div className="col-md-2">
-            <h6 className="text-uppercase font-weight-bold">
+            <p className="text-uppercase font-weight-bold">
               <Link to="/carrinho" className="text-white text-decoration-none">
                 Carrinho
               </Link>
-            </h6>
+            </p>
           </div>
 
           <div className="col-md-2">
-            <h6 className="text-uppercase font-weight-bold">
+            <p className="text-uppercase font-weight-bold">
               <Link to="/contato" className="text-white text-decoration-none">
                 Contato
               </Link>
-            </h6>
+            </p>
           </div>
         </div>
       </section>
@@ -56,19 +56,34 @@ export const Footer = () => (
       </section>
 
       <section className="text-center mb-5">
-        <a target="_blank" href="#" className="text-white me-4">
+        <a
+          target="_blank"
+          href="#"
+          className="text-white me-4"
+          title="Facebook"
+        >
           <BsFacebook />
         </a>
-        <a target="_blank" href="#" className="text-white me-4">
+        <a target="_blank" href="#" className="text-white me-4" title="Twitter">
           <BsTwitter />
         </a>
-        <a target="_blank" href="#" className="text-white me-4">
+        <a target="_blank" href="#" className="text-white me-4" title="Google">
           <BsGoogle />
         </a>
-        <a target="_blank" href="#" className="text-white me-4">
+        <a
+          target="_blank"
+          href="#"
+          className="text-white me-4"
+          title="Instagram"
+        >
           <BsInstagram />
         </a>
-        <a target="_blank" href="#" className="text-white me-4">
+        <a
+          target="_blank"
+          href="#"
+          className="text-white me-4"
+          title="Linkedin"
+        >
           <BsLinkedin />
         </a>
       </section>

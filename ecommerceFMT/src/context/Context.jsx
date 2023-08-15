@@ -1,10 +1,12 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import data from '../assets/mock.json';
+import bannerImage from './../assets/banner.json';
 
 export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
   const [products, setProducts] = useState(data);
+  const [banner, setBanner] = useState(bannerImage);
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
 
@@ -19,7 +21,6 @@ export const AppContextProvider = ({ children }) => {
     const checkItem = cart.every((item) => item.id !== id);
     if (checkItem) {
       const item = products.filter((product) => product.id === id);
-      item[0].quantidade += 1;
       const novoItem = { ...item[0] };
       setCart([...cart, novoItem]);
     } else {
@@ -40,6 +41,7 @@ export const AppContextProvider = ({ children }) => {
       value={{
         products,
         setProducts,
+        banner,
         addProductToCart,
         cart,
         setCart,

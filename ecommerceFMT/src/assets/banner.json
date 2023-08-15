@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imagem": "images/banner/playstation5.jpg",
+    "nome": "PlayStation 5",
+    "descricao": "Console de próxima geração da Sony com incrível poder de processamento."
+  },
+  {
+    "id": 2,
+    "imagem": "images/banner/sbox_series_x.jpg",
+    "nome": "Xbox Series X",
+    "descricao": "Console de última geração da Microsoft com desempenho superior."
+  },
+  {
+    "id": 3,
+    "imagem": "images/banner/red_dead_redemption_2.jpg",
+    "nome": "Red Dead Redemption 2",
+    "descricao": "Jogo de ação e aventura em um mundo aberto do Velho Oeste."
+  },
+  {
+    "id": 4,
+    "imagem": "images/banner/call_of_duty_warzone.jpg",
+    "nome": "Call of Duty: Warzone",
+    "descricao": "Jogo de battle royale da popular série Call of Duty."
+  },
+  {
+    "id": 5,
+    "imagem": "images/banner/mortal_kombat_11.jpg",
+    "nome": "Mortal Kombat 11",
+    "descricao": "Jogo de luta com uma lista diversificada de personagens."
+  }
+]

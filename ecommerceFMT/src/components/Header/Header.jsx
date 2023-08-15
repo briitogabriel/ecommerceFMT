@@ -5,7 +5,7 @@ import { MdGames } from 'react-icons/md';
 
 export const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary shadow mb-4">
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
@@ -15,12 +15,10 @@ export const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <LinkContainer to="/">
-              <Nav.Link>Home</Nav.Link>
-            </LinkContainer>
+            <Nav.Link className="fs-5">Home</Nav.Link>
 
             <LinkContainer to="/carrinho">
-              <Nav.Link>
+              <Nav.Link className="fs-5">
                 Carrinho{' '}
                 <sup>
                   <BadgeCart />
@@ -29,7 +27,7 @@ export const Header = () => {
             </LinkContainer>
 
             <LinkContainer to="/contato">
-              <Nav.Link>Contato</Nav.Link>
+              <Nav.Link className="fs-5">Contato</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

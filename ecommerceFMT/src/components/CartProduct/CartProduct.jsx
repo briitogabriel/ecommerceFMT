@@ -32,7 +32,8 @@ const CartProduct = ({ product }) => {
         break;
 
       case 'delete':
-        setCart(cart.filter((item) => item.id !== id));
+        const removeItem = cart.filter((item) => item.id !== id);
+        setCart(removeItem);
         break;
     }
   };
