@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Carousel from 'react-bootstrap/Carousel';
 import { useAppContext } from '../../context/Context';
 

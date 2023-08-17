@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Button, Card } from 'react-bootstrap';
 import './ProductCard.style.css';
 import { useAppContext } from '../../context/Context';

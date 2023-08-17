@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { InputGroup, Form, FormLabel } from 'react-bootstrap';
 import { SlMagnifier } from 'react-icons/sl';
 import { useAppContext } from '../../context/Context';
